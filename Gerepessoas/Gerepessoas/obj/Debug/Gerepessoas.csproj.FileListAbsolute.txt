@@ -1,0 +1,10 @@
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Gerepessoas\Gerepessoas\obj\Debug\Gerepessoas.csprojResolveAssemblyReference.cache
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Gerepessoas\Gerepessoas\obj\Debug\Gerepessoas.Form1.resources
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Gerepessoas\Gerepessoas\obj\Debug\Gerepessoas.Properties.Resources.resources
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Gerepessoas\Gerepessoas\obj\Debug\Gerepessoas.csproj.GenerateResource.Cache
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Gerepessoas\Gerepessoas\obj\Debug\Gerepessoas.csproj.CoreCompileInputs.cache
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Gerepessoas\Gerepessoas\bin\Debug\Gerepessoas.exe.config
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Gerepessoas\Gerepessoas\bin\Debug\Gerepessoas.exe
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Gerepessoas\Gerepessoas\bin\Debug\Gerepessoas.pdb
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Gerepessoas\Gerepessoas\obj\Debug\Gerepessoas.exe
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Gerepessoas\Gerepessoas\obj\Debug\Gerepessoas.pdb

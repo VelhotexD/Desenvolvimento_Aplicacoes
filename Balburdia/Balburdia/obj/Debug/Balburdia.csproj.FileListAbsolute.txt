@@ -1,0 +1,10 @@
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Balburdia\Balburdia\bin\Debug\Balburdia.exe.config
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Balburdia\Balburdia\bin\Debug\Balburdia.exe
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Balburdia\Balburdia\bin\Debug\Balburdia.pdb
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Balburdia\Balburdia\obj\Debug\Balburdia.csprojResolveAssemblyReference.cache
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Balburdia\Balburdia\obj\Debug\Balburdia.Form1.resources
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Balburdia\Balburdia\obj\Debug\Balburdia.Properties.Resources.resources
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Balburdia\Balburdia\obj\Debug\Balburdia.csproj.GenerateResource.Cache
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Balburdia\Balburdia\obj\Debug\Balburdia.csproj.CoreCompileInputs.cache
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Balburdia\Balburdia\obj\Debug\Balburdia.exe
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\Balburdia\Balburdia\obj\Debug\Balburdia.pdb

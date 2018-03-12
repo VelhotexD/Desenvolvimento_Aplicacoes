@@ -1,0 +1,10 @@
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\WindowsFormsAppFicha2\WindowsFormsAppFicha2\bin\Debug\WindowsFormsAppFicha2.exe.config
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\WindowsFormsAppFicha2\WindowsFormsAppFicha2\bin\Debug\WindowsFormsAppFicha2.exe
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\WindowsFormsAppFicha2\WindowsFormsAppFicha2\bin\Debug\WindowsFormsAppFicha2.pdb
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\WindowsFormsAppFicha2\WindowsFormsAppFicha2\obj\Debug\WindowsFormsAppFicha2.csprojResolveAssemblyReference.cache
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\WindowsFormsAppFicha2\WindowsFormsAppFicha2\obj\Debug\WindowsFormsAppFicha2.Form1.resources
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\WindowsFormsAppFicha2\WindowsFormsAppFicha2\obj\Debug\WindowsFormsAppFicha2.Properties.Resources.resources
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\WindowsFormsAppFicha2\WindowsFormsAppFicha2\obj\Debug\WindowsFormsAppFicha2.csproj.GenerateResource.Cache
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\WindowsFormsAppFicha2\WindowsFormsAppFicha2\obj\Debug\WindowsFormsAppFicha2.csproj.CoreCompileInputs.cache
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\WindowsFormsAppFicha2\WindowsFormsAppFicha2\obj\Debug\WindowsFormsAppFicha2.exe
+C:\Users\Velhote\source\repos\Desenvolvimento_Aplicacoes\WindowsFormsAppFicha2\WindowsFormsAppFicha2\obj\Debug\WindowsFormsAppFicha2.pdb
