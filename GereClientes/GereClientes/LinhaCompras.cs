@@ -11,15 +11,15 @@ namespace GereClientes
         public string descricao;
         public int valor;
 
-        public LinhaCompras()
+        public LinhaCompras(string descricao, int valor)
         {
-            
-
+            this.descricao = descricao;
+            this.valor = valor;
         }
 
         public override string ToString()
         {
-            return string.Concat(descricao);
+            return string.Concat(valor, "|", descricao);
         }
     }
 }

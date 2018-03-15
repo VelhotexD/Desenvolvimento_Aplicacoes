@@ -20,6 +20,7 @@ namespace GereClientes
             ListcompraList = new List<LinhaCompras>();
         }
 
+
         public override string ToString()
         {
             return string.Concat(tempo_compra,"|", total_compras);
