@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F988FD5C-E393-44FB-AE03-99A93C98C52E}</ProjectGuid>
+    <ProjectGuid>{548DF5F1-13B7-4DEC-9B60-62E2A888DD95}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>GereClientes</RootNamespace>
-    <AssemblyName>GereClientes</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>Ficha5_2160424</RootNamespace>
+    <AssemblyName>Ficha5_2160424</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -45,15 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cliente.cs" />
-    <Compile Include="Compra.cs" />
+    <Compile Include="cliente.cs" />
+    <Compile Include="compra.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="LinhaCompras.cs" />
+    <Compile Include="linhacompra.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

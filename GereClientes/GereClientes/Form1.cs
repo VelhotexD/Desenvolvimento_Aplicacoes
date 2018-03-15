@@ -13,6 +13,9 @@ namespace GereClientes
     public partial class Form1 : Form
     {
         Cliente newcliente = null;
+        Compra newcompra = null;
+        LinhaCompras newlinhacompras = null;
+
         public List<Cliente> lcliente = null;
 
         public Form1()
@@ -54,6 +57,23 @@ namespace GereClientes
                 lbNif.Text = newcliente.nif.ToString();
                 
             }
+        }
+
+        private void btCriarCompra_Click(object sender, EventArgs e)
+        {
+
+            Compra newcompra = new Compra();
+
+            lcliente[listBoxCliente.SelectedIndex].compraList.Add(newcompra);
+
+        }
+
+        private void btAddLinha_Click(object sender, EventArgs e)
+        {
+            LinhaCompras newlinhacompras = new LinhaCompras();
+
+            lcliente[listBoxCompras.SelectedIndex].compraList.Add(newlinhacompras);
+            lcliente[listBoxCliente.SelectedIndex].compraList[listBoxCompras.SelectedIndex].add(newlinhacompras);
         }
     }
 }

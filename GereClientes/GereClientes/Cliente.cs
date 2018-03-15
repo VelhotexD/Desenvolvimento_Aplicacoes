@@ -18,7 +18,7 @@ namespace GereClientes
         {
             this.nome = nome;
             this.nif = nif;
-            this.compraList = new List<Compra>();
+            compraList = new List<Compra>();
         }
 
 

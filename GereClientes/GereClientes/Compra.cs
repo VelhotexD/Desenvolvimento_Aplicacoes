@@ -6,10 +6,23 @@ using System.Threading.Tasks;
 
 namespace GereClientes
 {
-    class Compra
+    public class Compra
     {
-        
 
+        public DateTime tempo_compra;
+        public int total_compras;
 
+        public List<LinhaCompras> ListcompraList = null;
+
+        public Compra()
+        {
+            tempo_compra = DateTime.Now;
+            ListcompraList = new List<LinhaCompras>();
+        }
+
+        public override string ToString()
+        {
+            return string.Concat(tempo_compra,"|", total_compras);
+        }
     }
 }

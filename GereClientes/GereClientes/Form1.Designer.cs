@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.tbNome = new System.Windows.Forms.TextBox();
-            this.tbNif = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.btAddCliente = new System.Windows.Forms.Button();
-            this.btCriarCompra = new System.Windows.Forms.Button();
-            this.btApagarCompra = new System.Windows.Forms.Button();
-            this.btApagarLinha = new System.Windows.Forms.Button();
-            this.btAddLinha = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lbCliente = new System.Windows.Forms.Label();
-            this.lbNif = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbNif = new System.Windows.Forms.TextBox();
+            this.tbNome = new System.Windows.Forms.TextBox();
+            this.btAddCliente = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.listBoxCliente = new System.Windows.Forms.ListBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbNif = new System.Windows.Forms.Label();
+            this.lbCliente = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.Lblinhacompra = new System.Windows.Forms.ListBox();
+            this.listBoxCompras = new System.Windows.Forms.ListBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.listBoxCliente = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btAddLinha = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btApagarLinha = new System.Windows.Forms.Button();
+            this.btApagarCompra = new System.Windows.Forms.Button();
+            this.btCriarCompra = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -78,6 +78,49 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inserir Cliente";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(33, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(33, 17);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "NIF:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Nome:";
+            // 
+            // tbNif
+            // 
+            this.tbNif.Location = new System.Drawing.Point(115, 61);
+            this.tbNif.Name = "tbNif";
+            this.tbNif.Size = new System.Drawing.Size(100, 22);
+            this.tbNif.TabIndex = 1;
+            this.tbNif.Text = " ";
+            // 
+            // tbNome
+            // 
+            this.tbNome.Location = new System.Drawing.Point(115, 21);
+            this.tbNome.Name = "tbNome";
+            this.tbNome.Size = new System.Drawing.Size(100, 22);
+            this.tbNome.TabIndex = 0;
+            // 
+            // btAddCliente
+            // 
+            this.btAddCliente.Location = new System.Drawing.Point(140, 89);
+            this.btAddCliente.Name = "btAddCliente";
+            this.btAddCliente.Size = new System.Drawing.Size(87, 35);
+            this.btAddCliente.TabIndex = 2;
+            this.btAddCliente.Text = "Adicionar";
+            this.btAddCliente.UseVisualStyleBackColor = true;
+            this.btAddCliente.Click += new System.EventHandler(this.btAddCliente_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.listBoxCliente);
@@ -87,6 +130,16 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lista de Clientes";
+            // 
+            // listBoxCliente
+            // 
+            this.listBoxCliente.FormattingEnabled = true;
+            this.listBoxCliente.ItemHeight = 16;
+            this.listBoxCliente.Location = new System.Drawing.Point(7, 35);
+            this.listBoxCliente.Name = "listBoxCliente";
+            this.listBoxCliente.Size = new System.Drawing.Size(220, 324);
+            this.listBoxCliente.TabIndex = 0;
+            this.listBoxCliente.SelectedIndexChanged += new System.EventHandler(this.listBoxCliente_SelectedIndexChanged);
             // 
             // groupBox3
             // 
@@ -102,10 +155,46 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Cliente";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(734, 78);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 17);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "label6";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(731, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 17);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Total:";
+            // 
+            // lbNif
+            // 
+            this.lbNif.AutoSize = true;
+            this.lbNif.Location = new System.Drawing.Point(46, 79);
+            this.lbNif.Name = "lbNif";
+            this.lbNif.Size = new System.Drawing.Size(46, 17);
+            this.lbNif.TabIndex = 2;
+            this.lbNif.Text = "label4";
+            // 
+            // lbCliente
+            // 
+            this.lbCliente.AutoSize = true;
+            this.lbCliente.Location = new System.Drawing.Point(46, 40);
+            this.lbCliente.Name = "lbCliente";
+            this.lbCliente.Size = new System.Drawing.Size(46, 17);
+            this.lbCliente.TabIndex = 1;
+            this.lbCliente.Text = "label3";
+            // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.listBox3);
-            this.groupBox4.Controls.Add(this.listBox2);
+            this.groupBox4.Controls.Add(this.Lblinhacompra);
+            this.groupBox4.Controls.Add(this.listBoxCompras);
             this.groupBox4.Controls.Add(this.groupBox5);
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.label9);
@@ -121,27 +210,37 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Compras";
             // 
-            // tbNome
+            // Lblinhacompra
             // 
-            this.tbNome.Location = new System.Drawing.Point(115, 21);
-            this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(100, 22);
-            this.tbNome.TabIndex = 0;
+            this.Lblinhacompra.FormattingEnabled = true;
+            this.Lblinhacompra.ItemHeight = 16;
+            this.Lblinhacompra.Location = new System.Drawing.Point(281, 67);
+            this.Lblinhacompra.Name = "Lblinhacompra";
+            this.Lblinhacompra.Size = new System.Drawing.Size(241, 212);
+            this.Lblinhacompra.TabIndex = 15;
             // 
-            // tbNif
+            // listBoxCompras
             // 
-            this.tbNif.Location = new System.Drawing.Point(115, 61);
-            this.tbNif.Name = "tbNif";
-            this.tbNif.Size = new System.Drawing.Size(100, 22);
-            this.tbNif.TabIndex = 1;
-            this.tbNif.Text = " ";
+            this.listBoxCompras.FormattingEnabled = true;
+            this.listBoxCompras.ItemHeight = 16;
+            this.listBoxCompras.Location = new System.Drawing.Point(20, 68);
+            this.listBoxCompras.Name = "listBoxCompras";
+            this.listBoxCompras.Size = new System.Drawing.Size(242, 212);
+            this.listBoxCompras.TabIndex = 14;
             // 
-            // textBox3
+            // groupBox5
             // 
-            this.textBox3.Location = new System.Drawing.Point(16, 43);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(189, 22);
-            this.textBox3.TabIndex = 0;
+            this.groupBox5.Controls.Add(this.textBox4);
+            this.groupBox5.Controls.Add(this.label11);
+            this.groupBox5.Controls.Add(this.label12);
+            this.groupBox5.Controls.Add(this.textBox3);
+            this.groupBox5.Controls.Add(this.btAddLinha);
+            this.groupBox5.Location = new System.Drawing.Point(601, 44);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(239, 271);
+            this.groupBox5.TabIndex = 13;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Adicionar Linha de Compra";
             // 
             // textBox4
             // 
@@ -149,143 +248,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(189, 22);
             this.textBox4.TabIndex = 1;
-            // 
-            // btAddCliente
-            // 
-            this.btAddCliente.Location = new System.Drawing.Point(140, 89);
-            this.btAddCliente.Name = "btAddCliente";
-            this.btAddCliente.Size = new System.Drawing.Size(87, 35);
-            this.btAddCliente.TabIndex = 2;
-            this.btAddCliente.Text = "Adicionar";
-            this.btAddCliente.UseVisualStyleBackColor = true;
-            this.btAddCliente.Click += new System.EventHandler(this.btAddCliente_Click);
-            // 
-            // btCriarCompra
-            // 
-            this.btCriarCompra.Location = new System.Drawing.Point(23, 294);
-            this.btCriarCompra.Name = "btCriarCompra";
-            this.btCriarCompra.Size = new System.Drawing.Size(120, 31);
-            this.btCriarCompra.TabIndex = 3;
-            this.btCriarCompra.Text = "Criar Compra";
-            this.btCriarCompra.UseVisualStyleBackColor = true;
-            // 
-            // btApagarCompra
-            // 
-            this.btApagarCompra.Location = new System.Drawing.Point(159, 294);
-            this.btApagarCompra.Name = "btApagarCompra";
-            this.btApagarCompra.Size = new System.Drawing.Size(86, 31);
-            this.btApagarCompra.TabIndex = 4;
-            this.btApagarCompra.Text = "Apagar";
-            this.btApagarCompra.UseVisualStyleBackColor = true;
-            this.btApagarCompra.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btApagarLinha
-            // 
-            this.btApagarLinha.Location = new System.Drawing.Point(432, 294);
-            this.btApagarLinha.Name = "btApagarLinha";
-            this.btApagarLinha.Size = new System.Drawing.Size(90, 32);
-            this.btApagarLinha.TabIndex = 5;
-            this.btApagarLinha.Text = "Apagar";
-            this.btApagarLinha.UseVisualStyleBackColor = true;
-            // 
-            // btAddLinha
-            // 
-            this.btAddLinha.Location = new System.Drawing.Point(16, 152);
-            this.btAddLinha.Name = "btAddLinha";
-            this.btAddLinha.Size = new System.Drawing.Size(189, 25);
-            this.btAddLinha.TabIndex = 6;
-            this.btAddLinha.Text = "Adicionar Linha";
-            this.btAddLinha.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Nome:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "NIF:";
-            // 
-            // lbCliente
-            // 
-            this.lbCliente.AutoSize = true;
-            this.lbCliente.Location = new System.Drawing.Point(46, 40);
-            this.lbCliente.Name = "lbCliente";
-            this.lbCliente.Size = new System.Drawing.Size(46, 17);
-            this.lbCliente.TabIndex = 1;
-            this.lbCliente.Text = "label3";
-            // 
-            // lbNif
-            // 
-            this.lbNif.AutoSize = true;
-            this.lbNif.Location = new System.Drawing.Point(46, 79);
-            this.lbNif.Name = "lbNif";
-            this.lbNif.Size = new System.Drawing.Size(46, 17);
-            this.lbNif.TabIndex = 2;
-            this.lbNif.Text = "label4";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(731, 40);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 17);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Total:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(734, 78);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "label6";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(17, 44);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 17);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Compras";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(282, 44);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(123, 17);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Linha de Compras";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(296, 283);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 17);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Total:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(349, 282);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 17);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "label10";
             // 
             // label11
             // 
@@ -305,47 +267,87 @@
             this.label12.TabIndex = 12;
             this.label12.Text = "Valor:";
             // 
-            // groupBox5
+            // textBox3
             // 
-            this.groupBox5.Controls.Add(this.textBox4);
-            this.groupBox5.Controls.Add(this.label11);
-            this.groupBox5.Controls.Add(this.label12);
-            this.groupBox5.Controls.Add(this.textBox3);
-            this.groupBox5.Controls.Add(this.btAddLinha);
-            this.groupBox5.Location = new System.Drawing.Point(601, 44);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(239, 271);
-            this.groupBox5.TabIndex = 13;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Adicionar Linha de Compra";
+            this.textBox3.Location = new System.Drawing.Point(16, 43);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(189, 22);
+            this.textBox3.TabIndex = 0;
             // 
-            // listBoxCliente
+            // btAddLinha
             // 
-            this.listBoxCliente.FormattingEnabled = true;
-            this.listBoxCliente.ItemHeight = 16;
-            this.listBoxCliente.Location = new System.Drawing.Point(7, 35);
-            this.listBoxCliente.Name = "listBoxCliente";
-            this.listBoxCliente.Size = new System.Drawing.Size(220, 324);
-            this.listBoxCliente.TabIndex = 0;
-            this.listBoxCliente.SelectedIndexChanged += new System.EventHandler(this.listBoxCliente_SelectedIndexChanged);
+            this.btAddLinha.Location = new System.Drawing.Point(16, 152);
+            this.btAddLinha.Name = "btAddLinha";
+            this.btAddLinha.Size = new System.Drawing.Size(189, 25);
+            this.btAddLinha.TabIndex = 6;
+            this.btAddLinha.Text = "Adicionar Linha";
+            this.btAddLinha.UseVisualStyleBackColor = true;
+            this.btAddLinha.Click += new System.EventHandler(this.btAddLinha_Click);
             // 
-            // listBox2
+            // label10
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(20, 68);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(242, 212);
-            this.listBox2.TabIndex = 14;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(349, 282);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(54, 17);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "label10";
             // 
-            // listBox3
+            // label9
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(281, 67);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(241, 212);
-            this.listBox3.TabIndex = 15;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(296, 283);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(44, 17);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Total:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(282, 44);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(123, 17);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Linha de Compras";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(17, 44);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 17);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Compras";
+            // 
+            // btApagarLinha
+            // 
+            this.btApagarLinha.Location = new System.Drawing.Point(432, 294);
+            this.btApagarLinha.Name = "btApagarLinha";
+            this.btApagarLinha.Size = new System.Drawing.Size(90, 32);
+            this.btApagarLinha.TabIndex = 5;
+            this.btApagarLinha.Text = "Apagar";
+            this.btApagarLinha.UseVisualStyleBackColor = true;
+            // 
+            // btApagarCompra
+            // 
+            this.btApagarCompra.Location = new System.Drawing.Point(159, 294);
+            this.btApagarCompra.Name = "btApagarCompra";
+            this.btApagarCompra.Size = new System.Drawing.Size(86, 31);
+            this.btApagarCompra.TabIndex = 4;
+            this.btApagarCompra.Text = "Apagar";
+            this.btApagarCompra.UseVisualStyleBackColor = true;
+            this.btApagarCompra.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btCriarCompra
+            // 
+            this.btCriarCompra.Location = new System.Drawing.Point(23, 294);
+            this.btCriarCompra.Name = "btCriarCompra";
+            this.btCriarCompra.Size = new System.Drawing.Size(120, 31);
+            this.btCriarCompra.TabIndex = 3;
+            this.btCriarCompra.Text = "Criar Compra";
+            this.btCriarCompra.UseVisualStyleBackColor = true;
+            this.btCriarCompra.Click += new System.EventHandler(this.btCriarCompra_Click);
             // 
             // Form1
             // 
@@ -386,8 +388,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbNif;
         private System.Windows.Forms.Label lbCliente;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox Lblinhacompra;
+        private System.Windows.Forms.ListBox listBoxCompras;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label11;
