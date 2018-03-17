@@ -11,6 +11,7 @@ namespace GereClientes
         public string nome;
         public int nif;
         public int total_clientes;
+        public int total;
         
         public List<Compra> compraList = null;
 
@@ -19,6 +20,7 @@ namespace GereClientes
             this.nome = nome;
             this.nif = nif;
             compraList = new List<Compra>();
+            total = 0;
         }
 
 

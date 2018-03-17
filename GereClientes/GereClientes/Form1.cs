@@ -66,6 +66,9 @@ namespace GereClientes
             listBoxCompras.DataSource = lcliente[listBoxCliente.SelectedIndex].compraList;
             ComprarTotal();
             atualizar_compra();
+
+           
+
         }
 
 
@@ -125,6 +128,33 @@ namespace GereClientes
 
             Total();
             atualizar_lista_compra();
+
+
+            int quant_produtos = lcliente[listBoxCliente.SelectedIndex].compraList[listBoxCompras.SelectedIndex].ListcompraList.Count();
+            int total_precos = 0;
+
+            for (int i = 0; i < quant_produtos; i++)
+            {
+                total_precos = total_precos + lcliente[listBoxCliente.SelectedIndex].compraList[listBoxCompras.SelectedIndex].ListcompraList[i].valor;
+            }
+            lcliente[listBoxCliente.SelectedIndex].compraList[listBoxCompras.SelectedIndex].total_compras = total_precos;
+            llinatotal.Text = lcliente[listBoxCliente.SelectedIndex].compraList[listBoxCompras.SelectedIndex].total_compras.ToString() + "€";
+
+            listBoxCompras.DataSource = null;
+            listBoxCompras.DataSource = lcliente[listBoxCliente.SelectedIndex].compraList;
+
+            quant_produtos = lcliente[listBoxCliente.SelectedIndex].compraList.Count();
+            total_precos = 0;
+
+            for (int i = 0; i < quant_produtos; i++)
+            {
+                total_precos = total_precos + lcliente[listBoxCliente.SelectedIndex].compraList[i].total_compras;
+
+            }
+            lcliente[listBoxCliente.SelectedIndex].total = total_precos;
+
+            ltotal.Text = lcliente[listBoxCliente.SelectedIndex].total + "€";
+
         }
 
 
@@ -167,7 +197,30 @@ namespace GereClientes
              Lblinhacompra.DataSource = null;
              atualizar_lista_compra();
 
-            
+            int quant_produtos = lcliente[listBoxCliente.SelectedIndex].compraList[listBoxCompras.SelectedIndex].ListcompraList.Count();
+            int total_precos = 0;
+
+            for (int i = 0; i < quant_produtos; i++)
+            {
+                total_precos = total_precos + lcliente[listBoxCliente.SelectedIndex].compraList[listBoxCompras.SelectedIndex].ListcompraList[i].valor;
+            }
+            lcliente[listBoxCliente.SelectedIndex].compraList[listBoxCompras.SelectedIndex].total_compras = total_precos;
+            llinatotal.Text = lcliente[listBoxCliente.SelectedIndex].compraList[listBoxCompras.SelectedIndex].total_compras.ToString() + "€";
+
+            listBoxCompras.DataSource = null;
+            listBoxCompras.DataSource = lcliente[listBoxCliente.SelectedIndex].compraList;
+
+            quant_produtos = lcliente[listBoxCliente.SelectedIndex].compraList.Count();
+            total_precos = 0;
+
+            for (int i = 0; i < quant_produtos; i++)
+            {
+                total_precos = total_precos + lcliente[listBoxCliente.SelectedIndex].compraList[i].total_compras;
+
+            }
+            lcliente[listBoxCliente.SelectedIndex].total = total_precos;
+
+            ltotal.Text = lcliente[listBoxCliente.SelectedIndex].total + "€";
         }
 
         private void listBoxCompras_Click(object sender, EventArgs e)
